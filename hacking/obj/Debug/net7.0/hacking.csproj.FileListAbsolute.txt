@@ -1,0 +1,14 @@
+C:\Users\usuariot\RiderProjects\hacking\hacking\bin\Debug\net7.0\hacking.exe
+C:\Users\usuariot\RiderProjects\hacking\hacking\bin\Debug\net7.0\hacking.deps.json
+C:\Users\usuariot\RiderProjects\hacking\hacking\bin\Debug\net7.0\hacking.runtimeconfig.json
+C:\Users\usuariot\RiderProjects\hacking\hacking\bin\Debug\net7.0\hacking.dll
+C:\Users\usuariot\RiderProjects\hacking\hacking\bin\Debug\net7.0\hacking.pdb
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.AssemblyInfoInputs.cache
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.AssemblyInfo.cs
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.csproj.CoreCompileInputs.cache
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.dll
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\refint\hacking.dll
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.pdb
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\hacking.genruntimeconfig.cache
+C:\Users\usuariot\RiderProjects\hacking\hacking\obj\Debug\net7.0\ref\hacking.dll
