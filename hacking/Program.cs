@@ -5,28 +5,46 @@ using System.Text;
 string password = "!@#$%12345qwert";
 string incriptedPassword = Incrypt(password);
 string[] passwords = ReadFile();
-
 bool stop = false;
+int size = passwords.Length;
+int NumbThreads = 2;
+int jump = size / NumbThreads;
 
-
+var threads = new List<Thread>();
 
 Stopwatch timer = new Stopwatch();
 
-var hilo = new Thread(Thread1);
-var hilo2 = new Thread(Thread2);
+
+for (int i = 0; i < NumbThreads; i++)
+{
+    if (i+1 > NumbThreads)
+    {
+        break;
+    }
+
+    var start = jump * i;
+    var end = (jump*(i+1))-1;
+    var hilo = new Thread(()=>FunThread(start,end));
+    // Thread.Sleep(10);
+    threads.Add(hilo);
+}
+
 
 
 timer.Start();
-hilo.Start();
-hilo2.Start();
-
-
-
-
-void Thread1()
+foreach (var hilo in threads)
 {
-    
-    for (int i = 0; 0 < passwords.Length/2; i++)
+    hilo.Start();
+}
+
+
+
+
+
+
+void FunThread(int start, int end)
+{
+    for (int i = start;  i < end; i++)
     {
         if (stop)
         {
@@ -43,24 +61,7 @@ void Thread1()
     }
 }
 
-void Thread2()
-{
-    for (int x = passwords.Length/2; 0 > passwords.Length*(2/3); x++)
-    {
-        if (stop)
-        {
-            break;
-        }
-        if (Incrypt(passwords[x]) == incriptedPassword)
-        {
-            Console.WriteLine("Password = " + passwords[x] + x);
-            stop = true;
-            timer.Stop();
-            Console.WriteLine($"Time : {timer.Elapsed.TotalSeconds}");
-            break;
-        }
-    } 
-}
+
 
 
 
